@@ -1,0 +1,100 @@
+body{
+  Font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 94%) 
+  
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  padding-left: 55px;
+  background-color: hsl(0, 0%, 100%);
+  width: 645px;
+  height: 560px;
+  border-radius: 20px;
+  border-bottom-right-radius: 190px;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  gap: 30px;
+}
+.outputs h1{
+  font-size: 50px;
+  margin: 0;
+  line-height: 1.2;
+  font-style: italic;
+}
+.outputs span{
+  color: hsl(259, 100%, 65%);
+  letter-spacing: 12px;
+}
+.inputs{
+  display: flex;
+  gap: 40px;
+  border-bottom: 1px solid hsl(0, 0%, 86%);
+  padding-bottom: 32px;
+  padding-right: 40px;
+}
+.input-div input{
+  width: 110px;
+  height: 50px;
+  border-radius: 8px;
+  border: 1px solid hsl(0, 0%, 86%);
+  font-size: 20px;
+  font-weight: 700;
+  padding-left: 20px;
+}
+.arrowDiv{
+  display: flex;
+  background-color: hsl(259, 100%, 65%);
+  height: 55px;
+  width: 55px;
+  padding: 10px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 20px;
+  top: 190px;
+  transition: background-color 0.4s;
+}
+.arrowDiv:hover{
+  cursor: pointer;
+  background-color: hsl(0, 0%, 8%);
+}
+.arrowDiv:active{
+  transform: scale(0.9);
+}
+.arrowDiv img{
+  width: 40px;
+}
+@media (max-width:600px){
+.container{
+  display: flex;
+  flex-direction: column;
+  padding-left: 55px;
+  width: 400px;
+  height: 450px;
+  border-radius: 20px;
+  border-bottom-right-radius: 110px;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  gap: 30px;
+}
+.input-div input{
+  width: 68px;
+  height: 44px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+.arrowDiv{
+  height: 25px;
+  width: 25px;
+  right: 200px;
+  top: 144px;
+}
+}
